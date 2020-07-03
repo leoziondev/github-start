@@ -5,7 +5,7 @@ Este é um repositório de teste para estudo de como o git funciona e códs de f
 CONFIGS INICIAIS
 
 git config —global user.name "SEU NOME"
-git config —global [user.email](http://user.email) "SEU EMAIL"
+git config —global user.email "SEU EMAIL"
 
 git init // Inicializa o versionamento da pasta de trabalho
 
@@ -13,6 +13,10 @@ git add NOMEDOARQUIVO // Adiciona o arquivo a ser commitado
 git add . // Adiciona todos os arquivos modificados a serem comitados
 
 git commit -m "MENSAGEM DO ARQUIVO MODIFICADO"
+git commit -am "MENSAGEM" // Adiciona e comita arquivos modificados
+
+git push origin master // Envia seus arquivos commitados para o repositório
+( Necessário ter conectado(ou clonado) seu repositório a sua pasta do projeto )
 
 LOGS
 
