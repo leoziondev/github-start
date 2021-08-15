@@ -1,32 +1,41 @@
-#Git Códs Start
+# Git Códs Start
 
 Este é um repositório de teste para estudo de como o git funciona e códs de fácil acesso para consultas
 
-CONFIGS INICIAIS
+## CONFIGS INICIAIS
 
 git config —global user.name "SEU NOME"
+
 git config —global user.email "SEU EMAIL"
 
 git init // Inicializa o versionamento da pasta de trabalho
 
 git add NOMEDOARQUIVO // Adiciona o arquivo a ser commitado
+
 git add . // Adiciona todos os arquivos modificados a serem comitados
 
 git commit -m "MENSAGEM DO ARQUIVO MODIFICADO"
+
 git commit -am "MENSAGEM" // Adiciona e comita arquivos modificados
 
 git push origin master // Envia seus arquivos commitados para o repositório
+
 ( Necessário ter conectado(ou clonado) seu repositório a sua pasta do projeto )
 
-LOGS
+## LOGS
 
 git log
+
 git log —decorate
+
 git log —autohor= "NOME"
+
 git log shortlog // mostra todos os autores e seus commits
+
 git shortlog -sn // mostra somente qtd de pessoas e qtd de commits
 
 git diff // Visualiza a mudança no arquivo
+
 git diff —name-only // Mostra apenas o nome do arquivo modificado
 
 git show HASHDOCOMMIT
@@ -36,15 +45,19 @@ git checkout NOMEDOARQUIVO // Volta a uma ultima alteração
 git reset HEAD NOMEDOARQUIVO // Remove o arquivo da fase de stage ( Já comitado )
 
 git reset
+
 —soft HASHDOARQUIVO
+
 —mixed HASHDOARQUIVO
+
 —hard HASHDOARQUIVO
 
-CONFIGURANDO SSH NO GITHUB
+## CONFIGURANDO SSH NO GITHUB
 Consute a documentação para maiores informações
+
 https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
-GERANDO A CHAVE EM SUA ESTAÇÃO DE TRABALHO
+## GERANDO A CHAVE EM SUA ESTAÇÃO DE TRABALHO
 Abra o terminal e digite
 
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
